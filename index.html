@@ -1,241 +1,1601 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yulin Yang | Academic Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f7f9fb;
-      color: #333;
-      line-height: 1.7;
-    }
+<title>杨钰琳 Yulin Yang | Academic Homepage</title>
 
-    header {
-      background: #ffffff;
-      padding: 70px 20px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
+<style>
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+*{
+  box-sizing:border-box;
+}
 
-    header p {
-      color: #666;
-      font-size: 18px;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    nav {
-      margin-top: 25px;
-    }
+body{
+  margin:0;
+  font-family:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Microsoft YaHei",
+  Arial,
+  sans-serif;
 
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #2c6e9b;
-      font-weight: bold;
-    }
+  background:#f6f8fa;
+  color:#2d3748;
+  line-height:1.8;
+}
 
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 25px;
-    }
 
-    section {
-      background: white;
-      padding: 30px;
-      margin-bottom: 25px;
-      border-radius: 10px;
-    }
+/* ========================
+   首页
+======================== */
 
-    h2 {
-      color: #2c6e9b;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
+.hero{
+  background:white;
+  padding:75px 25px 60px;
+  border-bottom:1px solid #e5e7eb;
+}
 
-    .tag {
-      display: inline-block;
-      background: #edf4f8;
-      padding: 7px 13px;
-      margin: 5px;
-      border-radius: 20px;
-    }
+.hero-container{
+  max-width:1000px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:55px;
+}
 
-    footer {
-      text-align: center;
-      padding: 30px;
-      color: #777;
-    }
-  </style>
+
+/* 照片占位 */
+
+.profile-placeholder{
+
+  width:175px;
+  height:175px;
+
+  border-radius:50%;
+
+  background:#edf3f5;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:#82909a;
+
+  flex-shrink:0;
+
+  border:4px solid white;
+
+  box-shadow:
+  0 5px 22px rgba(0,0,0,0.08);
+
+}
+
+
+.hero-text h1{
+
+  font-size:46px;
+
+  margin:0 0 3px;
+
+  color:#1f2937;
+
+}
+
+.english-name{
+
+  font-size:23px;
+
+  color:#64748b;
+
+  margin-bottom:15px;
+
+}
+
+
+.position{
+
+  font-size:19px;
+
+  font-weight:600;
+
+  margin-bottom:4px;
+
+}
+
+.university{
+
+  color:#64748b;
+
+  font-size:17px;
+
+  margin-top:0;
+
+}
+
+
+.research-line{
+
+  margin-top:18px;
+
+  color:#326a7f;
+
+  font-weight:600;
+
+}
+
+
+/* 按钮 */
+
+.buttons{
+
+  margin-top:25px;
+
+}
+
+.button{
+
+  display:inline-block;
+
+  text-decoration:none;
+
+  padding:10px 18px;
+
+  margin:4px 8px 4px 0;
+
+  border-radius:6px;
+
+  background:#326a7f;
+
+  color:white;
+
+  font-size:14px;
+
+}
+
+.button.secondary{
+
+  background:white;
+
+  color:#326a7f;
+
+  border:1px solid #326a7f;
+
+}
+
+
+/* ========================
+   顶部导航
+======================== */
+
+nav{
+
+  background:white;
+
+  border-bottom:1px solid #e5e7eb;
+
+  text-align:center;
+
+  padding:16px 10px;
+
+  position:sticky;
+
+  top:0;
+
+  z-index:20;
+
+}
+
+nav a{
+
+  text-decoration:none;
+
+  color:#475569;
+
+  margin:0 13px;
+
+  font-weight:600;
+
+  font-size:14px;
+
+}
+
+nav a:hover{
+
+  color:#326a7f;
+
+}
+
+
+/* ========================
+   主体
+======================== */
+
+main{
+
+  max-width:960px;
+
+  margin:40px auto;
+
+  padding:0 20px;
+
+}
+
+
+section{
+
+  background:white;
+
+  padding:34px 38px;
+
+  margin-bottom:25px;
+
+  border-radius:10px;
+
+  box-shadow:
+  0 2px 12px rgba(0,0,0,0.035);
+
+}
+
+
+h2{
+
+  color:#326a7f;
+
+  font-size:26px;
+
+  margin-top:0;
+
+  border-bottom:1px solid #e7ecef;
+
+  padding-bottom:11px;
+
+}
+
+
+h3{
+
+  color:#334155;
+
+  margin-bottom:5px;
+
+}
+
+
+.subtitle{
+
+  color:#718096;
+
+  margin-top:0;
+
+  font-size:14px;
+
+}
+
+
+.item{
+
+  margin-bottom:30px;
+
+}
+
+.item:last-child{
+
+  margin-bottom:0;
+
+}
+
+
+ul{
+
+  padding-left:22px;
+
+}
+
+li{
+
+  margin-bottom:8px;
+
+}
+
+
+/* 标签 */
+
+.tag{
+
+  display:inline-block;
+
+  padding:7px 13px;
+
+  border-radius:20px;
+
+  background:#edf4f6;
+
+  color:#326a7f;
+
+  margin:5px 5px 5px 0;
+
+  font-size:14px;
+
+}
+
+
+/* 论文 */
+
+.publication{
+
+  padding:15px 0;
+
+  border-bottom:1px solid #edf0f2;
+
+}
+
+.publication:last-child{
+
+  border-bottom:none;
+
+}
+
+.journal{
+
+  font-style:italic;
+
+  color:#64748b;
+
+}
+
+
+/* 英文版分隔 */
+
+.language-divider{
+
+  text-align:center;
+
+  background:transparent;
+
+  box-shadow:none;
+
+  padding:55px 10px 30px;
+
+}
+
+.language-divider h1{
+
+  color:#326a7f;
+
+  font-size:34px;
+
+}
+
+.language-divider p{
+
+  color:#718096;
+
+}
+
+
+/* 联系方式 */
+
+.contact{
+
+  text-align:center;
+
+}
+
+.contact a{
+
+  color:#326a7f;
+
+  text-decoration:none;
+
+}
+
+
+footer{
+
+  text-align:center;
+
+  padding:35px;
+
+  color:#7b8794;
+
+  font-size:14px;
+
+}
+
+
+/* 手机 */
+
+@media(max-width:700px){
+
+  .hero-container{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:25px;
+
+  }
+
+  .hero-text h1{
+
+    font-size:36px;
+
+  }
+
+  nav a{
+
+    margin:0 5px;
+
+    font-size:12px;
+
+  }
+
+  section{
+
+    padding:25px 22px;
+
+  }
+
+}
+
+</style>
+
 </head>
+
+
 
 <body>
 
-<header>
 
-  <h1>Yulin Yang</h1>
 
-  <p>
-    Master's Student | Shandong University
-  </p >
+<!-- ========================
+     首页
+======================== -->
 
-  <p>
-    Aquaculture · Molecular Biology · Bioinformatics
-  </p >
+<header class="hero">
 
-  <nav>
-    <a href=" ">About</a >
-    <a href="#research">Research</a >
-    <a href="#education">Education</a >
-    <a href="#publications">Publications</a >
-    <a href="#skills">Skills</a >
-    <a href="#contact">Contact</a >
-  </nav>
+<div class="hero-container">
+
+
+<div class="profile-placeholder">
+个人照片
+</div>
+
+
+<div class="hero-text">
+
+<h1>杨钰琳</h1>
+
+<div class="english-name">
+Yulin Yang
+</div>
+
+
+<p class="position">
+山东大学海洋学院 · 生物与医药硕士研究生
+</p>
+
+
+<p class="university">
+M.S. Candidate | Marine College, Shandong University
+</p>
+
+
+<p class="research-line">
+水产动物品质 · 水产营养 · 多组学 · 分子生物学
+</p>
+
+
+<div class="buttons">
+
+<a class="button"
+href="#chinese">
+中文版
+</a>
+
+<a class="button secondary"
+href="#english">
+English Version
+</a>
+
+<a class="button secondary"
+href="#contact-cn">
+联系方式
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </header>
 
+
+
+<nav>
+
+<a href="#chinese">
+中文
+</a>
+
+<a href="#education-cn">
+教育背景
+</a>
+
+<a href="#research-cn">
+科研经历
+</a>
+
+<a href="#publications-cn">
+科研成果
+</a>
+
+<a href="#skills-cn">
+科研技能
+</a>
+
+<a href="#english">
+English
+</a>
+
+</nav>
+
+
+
 <main>
 
-<section id="about">
 
-<h2>About Me</h2>
+
+<!-- =====================================
+     中文版
+===================================== -->
+
+
+<section
+id="chinese">
+
+<h2>
+个人简介
+</h2>
+
 
 <p>
-I am a master's student at Shandong University with research interests
-in aquaculture, aquatic animal nutrition, molecular biology, and
-bioinformatics.
-</p >
+目前就读于山东大学海洋学院生物与医药专业，
+攻读专业学位硕士研究生。
+</p>
+
 
 <p>
-My research experience includes aquatic animal feeding experiments,
-nutritional and physiological analysis, feed preparation, and the
-construction and maintenance of indoor aquaculture systems.
-</p >
+硕士阶段主要围绕
+<strong>
+水产动物品质评价及其分子机制
+</strong>
+开展研究。
+以不同产地和养殖模式下的鲍鱼为主要研究对象，
+系统评价其营养组成、风味特征及热加工品质变化，
+并结合蛋白质组学和代谢组学手段，
+从分子层面解析水产动物品质差异及其形成机制。
+</p>
+
 
 <p>
-I am currently interested in pursuing Ph.D. research related to
-aquaculture, molecular mechanisms, and bioinformatics.
-</p >
+在研究过程中，
+积累了水产动物样品处理、
+品质与营养指标检测、
+多组学数据分析及分子生物学实验经验。
+同时参与过裂解性噬菌体分离鉴定、
+裂解酶基因挖掘及异源表达研究。
+</p>
+
+
+<p>
+此外，
+具有海参实验饲料制备、
+室内海参养殖系统搭建、
+日常养殖管理及水产动物精准取样等实践经验。
+</p>
+
+
+<p>
+博士阶段希望进一步开展
+<strong>
+甲壳动物及其他水产动物营养品质形成与调控
+</strong>
+相关研究，
+并将养殖实验、
+分子生物学及多组学分析相结合，
+深入探索水产动物营养、品质及健康相关的分子机制。
+</p>
 
 </section>
 
 
-<section id="research">
 
-<h2>Research Interests</h2>
+<!-- 中文教育 -->
 
-<span class="tag">Aquaculture</span>
-<span class="tag">Aquatic Animal Nutrition</span>
-<span class="tag">Molecular Biology</span>
-<span class="tag">Bioinformatics</span>
-<span class="tag">Nutritional Physiology</span>
+<section
+id="education-cn">
+
+<h2>
+教育背景
+</h2>
+
+
+<div class="item">
+
+<h3>
+山东大学
+</h3>
+
+<p class="subtitle">
+海洋学院 · 山东威海
+</p>
+
+<p>
+
+<strong>
+生物与医药（专业学位）硕士在读
+</strong>
+
+<br>
+
+2023.09 – 2027.06
+
+</p>
+
+<p>
+研究生新生二等奖学金
+</p>
+
+</div>
+
+
+
+<div class="item">
+
+<h3>
+曲阜师范大学
+</h3>
+
+<p>
+
+<strong>
+生物科学（师范）学士
+</strong>
+
+<br>
+
+2018.09 – 2022.06
+
+</p>
+
+<p>
+校二等奖学金
+</p>
+
+</div>
 
 </section>
+
+
+
+<!-- 中文科研 -->
+
+<section
+id="research-cn">
+
+<h2>
+科研经历
+</h2>
+
+
+
+<div class="item">
+
+<h3>
+不同养殖模式下鲍鱼品质分析与多组学评价
+</h3>
+
+<p class="subtitle">
+硕士阶段主要研究课题
+</p>
+
+<ul>
+
+<li>
+以不同产地和养殖模式的鲍鱼为研究对象，
+系统测定水分、蛋白质、脂肪、灰分等常规营养成分及风味相关指标。
+</li>
+
+<li>
+评价不同鲍鱼样品在热加工处理后的品质变化。
+</li>
+
+<li>
+开展蛋白质组学及代谢组学数据预处理、
+差异分析、
+统计检验、
+可视化及功能关联分析。
+</li>
+
+<li>
+从分子层面解析不同养殖环境及养殖模式造成鲍鱼品质差异的潜在机制。
+</li>
+
+<li>
+相关工作为水产养殖模式优化、
+品质调控及产地鉴别提供研究基础。
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="item">
+
+<h3>
+裂解性噬菌体分离鉴定及裂解酶异源表达
+</h3>
+
+<ul>
+
+<li>
+从环境样品中分离获得裂解性噬菌体，
+完成噬菌体纯化、
+培养及全基因组测序与注释。
+</li>
+
+<li>
+根据基因组信息筛选并挖掘潜在裂解酶
+（lysin）基因。
+</li>
+
+<li>
+利用分子克隆技术构建重组表达载体。
+</li>
+
+<li>
+在大肠杆菌中完成裂解酶蛋白异源表达与纯化。
+</li>
+
+<li>
+积累噬菌体及微生物培养、
+核酸操作、
+载体构建及蛋白表达等实验经验。
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="item">
+
+<h3>
+海参实验饲料制备与室内养殖系统搭建
+</h3>
+
+<ul>
+
+<li>
+参与海参实验饲料制作，
+具备饲料原料处理、
+配制、
+成型及实验用饲料制备的实际操作经验。
+</li>
+
+<li>
+参与室内海参养殖场地及实验系统搭建。
+</li>
+
+<li>
+参与养殖容器、
+供水与换水系统、
+充气增氧设备等基础设施的配置与调试。
+</li>
+
+<li>
+具备海参投喂、
+日常养殖管理、
+样品采集及实验系统维护经验。
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3>
+研究兴趣
+</h3>
+
+<span class="tag">
+水产动物营养
+</span>
+
+<span class="tag">
+水产品品质
+</span>
+
+<span class="tag">
+水产养殖
+</span>
+
+<span class="tag">
+蛋白质组学
+</span>
+
+<span class="tag">
+代谢组学
+</span>
+
+<span class="tag">
+分子生物学
+</span>
+
+<span class="tag">
+品质形成与调控
+</span>
+
+</section>
+
+
+
+<!-- 中文成果 -->
+
+<section
+id="publications-cn">
+
+<h2>
+科研成果
+</h2>
+
+
+<div class="publication">
+
+<strong>
+论文 1
+</strong>
+
+<p>
+杨钰琳，等.
+不同产地筏式养殖鲍鱼品质差异及热加工影响评价[J].
+《农产品加工》，2026（10–12月）.
+<strong>已录用</strong>
+</p>
+
+</div>
+
+
+
+<div class="publication">
+
+<strong>
+论文 2
+</strong>
+
+<p>
+
+Hu R G, Yang L, Wang L Y,
+<strong>Yang Y L</strong>,
+Li H J, Yang B T, Kang Y H,
+Liang Z L, Cong W.
+
+</p>
+
+<p>
+Unveiling the pathogenic and multidrug-resistant profiles of
+<em>Vibrio alfacsensis</em>:
+A potential identified threat in turbot
+(<em>Scophthalmus maximus</em>)
+aquaculture.
+</p>
+
+<span class="journal">
+Journal of Hazardous Materials,
+2024, 479:135729.
+</span>
+
+</div>
+
+
+
+<div class="publication">
+
+<strong>
+论文 3
+</strong>
+
+<p>
+
+Chen F L, Zhao H T, Gu W, et al.,
+<strong>Yang Y L</strong>, et al.
+
+</p>
+
+<p>
+
+<em>Lactiplantibacillus plantarum</em>
+O126 postbiotics boost growth,
+antioxidant levels,
+disease resistance,
+and gut health in sea cucumber
+(<em>Apostichopus japonicus</em>).
+
+</p>
+
+<span class="journal">
+
+Probiotics and Antimicrobial Proteins,
+2026, 18:7339–7353.
+
+</span>
+
+</div>
+
+
+
+<div class="publication">
+
+<strong>
+发明专利
+</strong>
+
+<p>
+丛伟，吴忠迅，杨钰琳，张雪，蔡金峰，李树，康元环.
+一种长岛野生鲍鱼的产地鉴别方法：
+中国，202611053346.7[P].
+2026-07-15.
+<strong>已受理</strong>
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- 中文技能 -->
+
+<section
+id="skills-cn">
+
+<h2>
+科研技能
+</h2>
+
+
+<h3>
+品质与营养分析
+</h3>
+
+<span class="tag">灰分含量检测</span>
+<span class="tag">索氏抽提</span>
+<span class="tag">凯氏定氮</span>
+<span class="tag">核苷酸含量检测</span>
+<span class="tag">高效液相色谱</span>
+<span class="tag">分光光度计</span>
+
+
+<h3>
+多组学与生物信息学
+</h3>
+
+<span class="tag">16S肠道菌群</span>
+<span class="tag">转录组</span>
+<span class="tag">蛋白质组</span>
+<span class="tag">代谢组</span>
+<span class="tag">差异分析</span>
+<span class="tag">统计可视化</span>
+<span class="tag">Python</span>
+<span class="tag">R</span>
+<span class="tag">Linux</span>
+
+
+<h3>
+分子与微生物实验
+</h3>
+
+<span class="tag">PCR</span>
+<span class="tag">qPCR</span>
+<span class="tag">ddPCR</span>
+<span class="tag">NGS</span>
+<span class="tag">核酸提取与纯化</span>
+<span class="tag">DNA重组</span>
+<span class="tag">引物设计</span>
+<span class="tag">基因敲除</span>
+<span class="tag">质粒构建</span>
+<span class="tag">蛋白表达与纯化</span>
+<span class="tag">噬菌体培养</span>
+
+
+<h3>
+水产动物与养殖实验
+</h3>
+
+<span class="tag">鲍鱼</span>
+<span class="tag">海参</span>
+<span class="tag">牡蛎</span>
+<span class="tag">许氏平鲉</span>
+<span class="tag">动物解剖与精准取样</span>
+<span class="tag">实验饲料制备</span>
+<span class="tag">室内养殖系统搭建</span>
+
+</section>
+
+
+
+<section
+id="contact-cn">
+
+<h2>
+联系方式
+</h2>
+
+<div class="contact">
+
+<p>
+欢迎就博士研究生申请、
+科研合作及学术问题与我联系。
+</p>
+
+<p>
+
+📧
+
+<a href="mailto:13205357821@163.com">
+
+13205357821@163.com
+
+</a>
+
+</p>
+
+<p>
+📍 山东威海
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     英文版开始
+===================================== -->
+
+
+<section
+class="language-divider"
+id="english">
+
+<h1>
+English Version
+</h1>
+
+<p>
+Academic Profile · Yulin Yang
+</p>
+
+</section>
+
 
 
 <section>
 
-<h2>Research Experience</h2>
-
-<h3>Aquatic Animal Nutrition & Aquaculture</h3>
-
-<p>
-Conducted aquatic animal feeding experiments and investigated
-nutritional, physiological, and biochemical responses under
-different dietary and culture conditions.
-</p >
-
-<h3>Feed Preparation</h3>
+<h2>
+About Me
+</h2>
 
 <p>
-Experience in experimental feed formulation and preparation,
-including feed production for sea cucumber culture experiments.
-</p >
-
-<h3>Indoor Aquaculture System</h3>
+I am currently pursuing a professional master's degree
+in Biology and Medicine at the Marine College of
+Shandong University.
+</p>
 
 <p>
-Participated in the construction, operation, and maintenance of
-indoor sea cucumber aquaculture facilities and experimental systems.
-</p >
+My master's research focuses on aquatic animal quality
+evaluation and the molecular mechanisms underlying
+quality formation.
+My research mainly investigates nutritional,
+flavor-related and processing quality differences
+among abalone originating from different geographic
+regions and aquaculture systems.
+</p>
+
+<p>
+I integrate conventional nutritional and quality
+evaluation with proteomics and metabolomics to
+investigate the molecular basis of aquatic product
+quality.
+</p>
+
+<p>
+I also have research experience in molecular
+microbiology, including bacteriophage isolation,
+whole-genome sequencing, molecular cloning and
+heterologous expression of bacteriophage lysins.
+</p>
+
+<p>
+In addition, I have hands-on experience in experimental
+sea cucumber feed preparation, construction of indoor
+aquaculture systems, routine aquaculture management
+and aquatic animal sampling.
+</p>
+
+<p>
+For my Ph.D. study, I hope to further investigate the
+formation and regulation of nutritional quality in
+crustaceans and other aquatic animals by integrating
+aquaculture experiments, molecular biology and
+multi-omics approaches.
+</p>
 
 </section>
 
 
-<section id="education">
 
-<h2>Education</h2>
+<section>
 
-<h3>Shandong University</h3>
+<h2>
+Education
+</h2>
+
+<div class="item">
+
+<h3>
+Shandong University
+</h3>
+
+<p class="subtitle">
+Marine College · Weihai, China
+</p>
 
 <p>
-Master's Degree
-</p >
+
+<strong>
+M.S. Candidate in Biology and Medicine
+</strong>
+
+<br>
+
+September 2023 – June 2027
+
+</p>
 
 <p>
-Biology and Medicine
-</p >
+Graduate Freshman Second-Class Scholarship
+</p>
+
+</div>
+
+
+<div class="item">
+
+<h3>
+Qufu Normal University
+</h3>
+
+<p>
+
+<strong>
+B.S. in Biological Science
+(Teacher Education)
+</strong>
+
+<br>
+
+September 2018 – June 2022
+
+</p>
+
+<p>
+University Second-Class Scholarship
+</p>
+
+</div>
 
 </section>
 
 
-<section id="publications">
 
-<h2>Publications</h2>
+<section>
 
-<p>
-Research publications and manuscripts will be updated here.
-</p >
+<h2>
+Research Experience
+</h2>
+
+
+<div class="item">
+
+<h3>
+Quality Analysis and Multi-omics Evaluation
+of Abalone under Different Aquaculture Modes
+</h3>
+
+<p class="subtitle">
+Main Master's Research Project
+</p>
+
+<ul>
+
+<li>
+Investigated abalone from different geographic
+origins and aquaculture systems.
+</li>
+
+<li>
+Measured conventional nutritional components,
+including moisture, protein, lipid and ash,
+together with flavor-related quality indicators.
+</li>
+
+<li>
+Evaluated quality changes following thermal processing.
+</li>
+
+<li>
+Applied proteomics and metabolomics for data
+preprocessing, differential analysis,
+statistical visualization and functional association analysis.
+</li>
+
+<li>
+Investigated molecular mechanisms underlying
+quality differences associated with aquaculture
+environment and culture mode.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="item">
+
+<h3>
+Isolation and Characterization of Lytic
+Bacteriophages and Heterologous Expression
+of Phage Lysins
+</h3>
+
+<ul>
+
+<li>
+Isolated and purified a lytic bacteriophage from
+environmental samples.
+</li>
+
+<li>
+Conducted bacteriophage culture,
+whole-genome sequencing and genome annotation.
+</li>
+
+<li>
+Identified potential lysin genes based on
+genomic information.
+</li>
+
+<li>
+Constructed recombinant expression vectors
+using molecular cloning techniques.
+</li>
+
+<li>
+Performed heterologous expression and
+purification of recombinant lysin protein in
+<em>Escherichia coli</em>.
+</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="item">
+
+<h3>
+Sea Cucumber Experimental Feed Preparation
+and Indoor Aquaculture System Construction
+</h3>
+
+<ul>
+
+<li>
+Participated in experimental sea cucumber
+diet preparation, including ingredient processing,
+formulation and feed shaping.
+</li>
+
+<li>
+Participated in construction and organization
+of an indoor sea cucumber aquaculture facility.
+</li>
+
+<li>
+Assisted with culture tanks, water supply and
+exchange systems, and aeration equipment.
+</li>
+
+<li>
+Gained hands-on experience in feeding,
+routine management, sample collection and
+experimental system maintenance.
+</li>
+
+</ul>
+
+</div>
 
 </section>
 
 
-<section id="skills">
 
-<h2>Research Skills</h2>
+<section>
 
-<span class="tag">Aquaculture Experiments</span>
+<h2>
+Research Interests
+</h2>
+
+<span class="tag">
+Aquatic Animal Nutrition
+</span>
+
+<span class="tag">
+Aquatic Product Quality
+</span>
+
+<span class="tag">
+Aquaculture
+</span>
+
+<span class="tag">
+Proteomics
+</span>
+
+<span class="tag">
+Metabolomics
+</span>
+
+<span class="tag">
+Molecular Biology
+</span>
+
+<span class="tag">
+Quality Formation & Regulation
+</span>
+
+</section>
+
+
+
+<section>
+
+<h2>
+Publications & Research Outputs
+</h2>
+
+
+<div class="publication">
+
+<strong>
+1. Yang Y., et al.
+</strong>
+
+<p>
+Quality differences of raft-cultured abalone from
+different geographic origins and evaluation of the
+effects of thermal processing.
+</p>
+
+<span class="journal">
+Agricultural Products Processing,
+2026. Accepted.
+</span>
+
+</div>
+
+
+<div class="publication">
+
+<strong>
+2. Hu R. G., Yang L., Wang L. Y.,
+Yang Y. L., et al.
+</strong>
+
+<p>
+Unveiling the pathogenic and multidrug-resistant
+profiles of <em>Vibrio alfacsensis</em>:
+A potential identified threat in turbot
+(<em>Scophthalmus maximus</em>) aquaculture.
+</p>
+
+<span class="journal">
+Journal of Hazardous Materials,
+2024, 479:135729.
+</span>
+
+</div>
+
+
+<div class="publication">
+
+<strong>
+3. Chen F. L., Zhao H. T., Gu W., et al.,
+Yang Y. L., et al.
+</strong>
+
+<p>
+
+<em>Lactiplantibacillus plantarum</em>
+O126 postbiotics boost growth,
+antioxidant levels,
+disease resistance,
+and gut health in sea cucumber
+(<em>Apostichopus japonicus</em>).
+
+</p>
+
+<span class="journal">
+
+Probiotics and Antimicrobial Proteins,
+2026, 18:7339–7353.
+
+</span>
+
+</div>
+
+
+<div class="publication">
+
+<strong>
+Patent
+</strong>
+
+<p>
+Cong W., Wu Z., Yang Y., Zhang X.,
+Cai J., Li S., Kang Y.
+A method for geographical-origin identification
+of wild abalone from Changdao.
+Chinese Patent Application No. 202611053346.7.
+Accepted July 15, 2026.
+</p>
+
+</div>
+
+</section>
+
+
+
+<section>
+
+<h2>
+Research Skills
+</h2>
+
+
+<h3>
+Quality & Nutritional Analysis
+</h3>
+
+<span class="tag">Ash Analysis</span>
+<span class="tag">Soxhlet Extraction</span>
+<span class="tag">Kjeldahl Analysis</span>
+<span class="tag">Nucleotide Analysis</span>
+<span class="tag">HPLC</span>
+
+
+<h3>
+Multi-omics & Bioinformatics
+</h3>
+
+<span class="tag">16S Microbiome</span>
+<span class="tag">Transcriptomics</span>
+<span class="tag">Proteomics</span>
+<span class="tag">Metabolomics</span>
+<span class="tag">Python</span>
+<span class="tag">R</span>
+<span class="tag">Linux</span>
+
+
+<h3>
+Molecular Biology & Microbiology
+</h3>
+
+<span class="tag">PCR</span>
+<span class="tag">qPCR</span>
+<span class="tag">ddPCR</span>
+<span class="tag">NGS</span>
+<span class="tag">DNA/RNA Extraction</span>
+<span class="tag">Primer Design</span>
+<span class="tag">Plasmid Construction</span>
+<span class="tag">Gene Knockout</span>
+<span class="tag">Protein Expression</span>
+<span class="tag">Protein Purification</span>
+<span class="tag">Bacteriophage Culture</span>
+
+
+<h3>
+Aquaculture & Animal Sampling
+</h3>
+
+<span class="tag">Abalone</span>
+<span class="tag">Sea Cucumber</span>
+<span class="tag">Oyster</span>
+<span class="tag">Black Rockfish</span>
+<span class="tag">Animal Dissection</span>
+<span class="tag">Precise Sampling</span>
 <span class="tag">Feed Preparation</span>
-<span class="tag">Molecular Biology</span>
-<span class="tag">Biochemical Analysis</span>
-<span class="tag">Bioinformatics</span>
-<span class="tag">Data Analysis</span>
+<span class="tag">Indoor Aquaculture Systems</span>
 
 </section>
 
 
-<section id="contact">
 
-<h2>Contact</h2>
+<section>
+
+<h2>
+Contact
+</h2>
+
+<div class="contact">
 
 <p>
-📧 Email: Your academic email
-</p >
+I welcome communication regarding Ph.D. opportunities,
+academic collaboration and research.
+</p>
 
 <p>
-📄 Curriculum Vitae: CV available upon request
-</p >
+
+📧
+
+<a href="mailto:13205357821@163.com">
+
+13205357821@163.com
+
+</a>
+
+</p>
+
+<p>
+📍 Weihai, Shandong, China
+</p>
+
+</div>
 
 </section>
+
 
 </main>
 
 
+
 <footer>
 
-<p>
-© 2026 Yulin Yang · Academic Homepage
-</p >
+© 2026 Yulin Yang · 杨钰琳 · Academic Homepage
 
 </footer>
 
+
 </body>
+
 </html>
