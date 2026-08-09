@@ -78,7 +78,16 @@ body{
   0 5px 22px rgba(0,0,0,0.08);
 
 }
-
+.profile-photo {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  flex-shrink: 0;
+  border: 4px solid white;
+  box-shadow: 0 5px 22px rgba(0,0,0,0.10);
+}
 
 .hero-text h1{
 
@@ -467,9 +476,9 @@ footer{
 <div class="hero-container">
 
 
-<div class="profile-placeholder">
-个人照片
-</div>
+< img class="profile-photo"
+     src="简历照片.jpg"
+     alt="Yulin Yang">
 
 
 <div class="hero-text">
